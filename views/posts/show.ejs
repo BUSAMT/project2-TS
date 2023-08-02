@@ -1,5 +1,10 @@
 <%- include('../partials/header') %>
 
+    <p>
+        <%= post.content %>
+    </p>
+    <form action="/posts/<%= post._id %>?_method=DELETE" method="POST">
+        <button type="submit">&times;</button>
+    </form>
 
-
-<%- include('../partials/footer') %>
+    <%- include('../partials/footer') %>

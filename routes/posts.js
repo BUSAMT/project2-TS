@@ -14,6 +14,13 @@ router.get('/:id', postsController.show);
 //POST /posts
 router.post('/', postsController.create);
 
+//DELETE /posts/:id
+router.delete('/:id', postsController.delete);
+
+//PUT /posts/:id
+
+
+
 
 
 
