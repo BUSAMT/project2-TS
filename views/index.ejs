@@ -1,6 +1,30 @@
-<%- include('./partials/header') %>
+<!DOCTYPE html>
+<html lang="en">
 
-<h1>Swiftter</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Creepster&family=Dancing+Script:wght@700&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Creepster&family=Dancing+Script:wght@700&family=Open+Sans:wght@300&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <title>Swiftter</title>
+</head>
+
+<body>
+    <h1 id="sign-in-heading">Swiftter</h1>
+    <h4 id="sub-heading">you are the best thing that's ever been mine</h4>
+    <img src="/images/2e8697e4a8af6ef1b7dbcfa4739d3879.jpeg" alt="" id="logo-image">
+    <form>
+        <input type="button" onclick="window.location.href='/auth/google';" value="Login with Google"
+            class="login-index">
+    </form>
+</body>
+</html>
 
 <%- include('./partials/footer') %>
-  

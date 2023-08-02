@@ -1,10 +1,45 @@
-body {
+/* body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+} */
 
 a {
   color: #00B7FF;
+} 
+
+body {
+  height: 100%;
+  background-color: #F8F8F8;
+}
+
+.login img {
+  height: 30px;
+}
+
+#sign-in-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 0px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 100px;
+  color: #9588CA;
+}
+
+#sub-heading {
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+  margin-bottom: 0px;
+  margin-top: 1px;
+}
+
+#logo-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .login {
@@ -14,6 +49,15 @@ a {
   height: 34px;
 }
 
-.login img {
-  height: 30px;
+.login-index {
+  display: block;
+  margin: 0 auto;
+  background-color: lightpink;
+  border-color: #cab2e5;
+  border-radius: 25px;
+  color: #F8F8F8;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+
 }
