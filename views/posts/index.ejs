@@ -1,13 +1,12 @@
 <%- include('../partials/header') %>
 
     <!-- <div class="col-6"> -->
-    <div class="col-lg-4 offset-1">Col 2
+    <div class="col-lg-4 offset-1">
         <h3 class="feed-heading">FEED</h3>
         <% if (user) { %>
             <div>
                 <form action="/posts" method="POST" class="post-form">
                     <input type="text" name="content" class="input-post">
-                    <!-- <input type="submit" value="Post" id="post-button"> -->
                     <input type="submit" value="Post!" class="post-index">
                 </form>
             </div>
