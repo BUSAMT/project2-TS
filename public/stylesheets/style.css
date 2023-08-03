@@ -7,7 +7,7 @@ a {
   color: #00B7FF;
 } 
 
-body {
+body, html {
   height: 100%;
   background-color: #F8F8F8;
 }
@@ -58,10 +58,31 @@ body {
   color: #F8F8F8;
   height: 40px;
   padding: 10px;
+  width: 150px;
   text-align: center;
 }
 
 .post-user {
   border-radius: 50%;
   height: 40px;
+}
+
+.create-post-container {
+  position: relative;
+  height: 100px;
+  width: 500px;
+}
+
+.custom-header {
+  background-color: #F8F8F8;
+}
+
+.custom-heading {
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+  color: #9588CA;
+}
+
+.login-main {
+  margin-top: 7px;
 }
