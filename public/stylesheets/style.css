@@ -60,11 +60,13 @@ body, html {
   padding: 10px;
   width: 150px;
   text-align: center;
+  font-family: 'Satisfy', cursive;
 }
 
 .post-user {
   border-radius: 50%;
   height: 40px;
+  margin: 5px;
 }
 
 .create-post-container {
@@ -77,7 +79,7 @@ body, html {
   background-color: #F8F8F8;
 }
 
-.custom-heading {
+.main-heading-text {
   font-family: 'Dancing Script', cursive;
   font-size: 50px;
   color: #9588CA;
@@ -85,4 +87,81 @@ body, html {
 
 .login-main {
   margin-top: 7px;
+}
+
+.input-post {
+  height: 100px;
+  width: 300px;
+  display:inline-block;
+  margin: 10px;
+  border-radius: 25px;
+  border-color: lightpink;
+}
+
+.post-index, .delete-button {
+  /* display: block; */
+  /* margin: 0 auto; */
+  background-color: lightpink;
+  border-color: #cab2e5;
+  border-radius: 25px;
+  color: #F8F8F8;
+  height: 40px;
+  padding: 10px;
+  width: 90px;
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+}
+
+.feed-heading {
+  font-family: 'Dancing Script', cursive;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.list-posts {
+  margin: 10px;
+}
+
+.posts {
+  margin: 5px;
+  border-radius: 25px;
+  border: 2px solid lightpink;
+  padding: 5px;
+}
+
+.post-profile {
+  display: inline-flex;
+}
+
+.post-username {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: #3A3B3C;
+  font-size: 25px;
+  font-family: 'Playfair Display', serif;
+}
+
+.post-link {
+  text-decoration: none;
+}
+
+.post-content {
+  color: black;
+  font-family: 'Playfair Display', serif;
+}
+
+.show-post {
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid lightpink;
+  border-radius: 25px;
+}
+
+/* .delete-button {
+
+} */
+
+a {
+  text-decoration: none;
 }

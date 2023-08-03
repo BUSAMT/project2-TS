@@ -1,11 +1,22 @@
 <%- include('../partials/header') %>
 
-    <p>
-        <%= post.content %>
-    </p>
-    <% if (user?._id.equals(post.user)) { %>
-        <form action="/posts/<%= post._id %>?_method=DELETE" method="POST">
-            <button type="submit">&times;</button>
-        </form>
-        <% } %>
-            <%- include('../partials/footer') %>
+    <div class="col-lg-4 offset-1">Col 2
+        <div class="show-post">
+            <div class="post-profile">
+                <img src="<%= post.userAvatar %>" alt="avatar" referrerpolicy="no-referrer"
+                    class="post-user">
+                <p class="post-username">
+                    <%= post.userName %>
+                </p>
+            </div>
+            <p class="post-content">
+                <%= post.content %>
+            </p>
+            <% if (user?._id.equals(post.user)) { %>
+                <form action="/posts/<%= post._id %>?_method=DELETE" method="POST">
+                    <button type="submit" class="delete-button">Delete!</button>
+                </form>
+                <% } %>
+        </div>
+    </div>
+    <%- include('../partials/footer') %>
