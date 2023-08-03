@@ -1,15 +1,21 @@
 <%- include('../partials/header') %>
 
     <h1>Posts</h1>
+    <% if (user) { %>
     <form action="/posts" method="POST">
         <input type="text" name="content">
         <input type="submit" value="Post">
     </form>
+    <% } %>
     <div>
         <% posts.forEach(function(p) { %>
             <div class="posts">
+                <img src="<%= p.userAvatar %>" alt="avatar" referrerpolicy="no-referrer" class="post-user">
                 <p>
                     <a href="/posts/<%= p._id %>"><%= p.content %></a>
+                </p>
+                <p>
+                    <%= p.userName %>
                 </p>
             </div>
             <% }); %>

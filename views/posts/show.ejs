@@ -3,8 +3,9 @@
     <p>
         <%= post.content %>
     </p>
-    <form action="/posts/<%= post._id %>?_method=DELETE"    ` method="POST">
-        <button type="submit">&times;</button>
-    </form>
-
-    <%- include('../partials/footer') %>
+    <% if (user?._id.equals(post.user)) { %>
+        <form action="/posts/<%= post._id %>?_method=DELETE" method="POST">
+            <button type="submit">&times;</button>
+        </form>
+        <% } %>
+            <%- include('../partials/footer') %>

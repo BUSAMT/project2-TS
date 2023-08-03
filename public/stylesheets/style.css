@@ -59,5 +59,9 @@ body {
   height: 40px;
   padding: 10px;
   text-align: center;
+}
 
+.post-user {
+  border-radius: 50%;
+  height: 40px;
 }

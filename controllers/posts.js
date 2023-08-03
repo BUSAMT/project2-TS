@@ -15,6 +15,8 @@ async function create(req, res) {
     for (let key in req.body) {
         if (req.body[key] === '') delete req.body[key];
     } try {
+        req.body.userName = req.user.name;
+        req.body.userAvatar = req.user.avatar;
         req.body.user = req.user._id;
         const post = await Post.create(req.body);
         res.redirect(`/posts/${post._id}`);
