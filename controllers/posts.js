@@ -5,10 +5,6 @@ async function index(req, res) {
     res.render('posts/index', {title: 'Swiftter', posts});
 }
 
-// function newPost(req, res) {
-//     res.render('posts/index', { title: 'Swiftter', errorMsg: '' });
-// }
-
 async function create(req, res) {
     const posts = await Post.find({});
     console.log(req.body);
@@ -39,7 +35,6 @@ async function deletePost(req, res) {
 
 module.exports = {
     index,
-    // new: newPost,
     create,
     show,
     delete: deletePost
